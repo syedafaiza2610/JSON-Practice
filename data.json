@@ -1,0 +1,26 @@
+[{
+    "name" : "john Doe",
+    "mobile" : 123456789,
+    "city" : "Karachi",
+    "courses" : ["PHP" ,"LARAVEL" ,".NET","CMS"],
+    "address" :{
+        "area" : "North Karachi",
+        "PIN" : 12345
+    }
+},
+{
+    "name" : "John Doe",
+    "marks" : 80,
+    "date" : "22-2-25",
+    "courses" : ["PHP" ,"LARAVEL" ,".NET","CMS"],
+    "address" :{
+        "area" : "North Karachi",
+        "PIN" : 12345,
+        "long" : 50.52,
+        "lat" : 50.4
+    },
+    "married" : false,
+    "number" :null
+
+
+}]
