@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv"></div>
+
+
+    <script>
+        var obj,i,x ="";
+        obj = {
+            "name" : "John Doe",
+            "mobile" : 123456789,
+            "courses" : {
+                "course1" : "PHP",
+                "course2" : "LARAVEL",
+                "course3" : ".NET"
+            }
+        }
+        for(i in obj.courses){
+            x += obj.courses[i] + "</br>"
+        }
+      
+        document.getElementById('mydiv').innerHTML = x
+
+
+    </script>
+</body>
+</html>
