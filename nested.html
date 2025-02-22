@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv"></div>
+
+
+    <script>
+        var obj = {
+            "name" : "John Doe",
+            "mobile" : 123456789,
+            "courses" : {
+                "course1" : "PHP",
+                "course2" : "LARAVEL",
+                "course3" : ".NET"
+            }
+        }
+        c1 = obj.courses.course1;
+        c2 = obj.courses.course2;
+        c3 = obj.courses.course3;
+
+
+        document.getElementById('mydiv').innerHTML = c1 + "</br>" + c2 + "</br>" + c3
+    </script>
+</body>
+</html>
