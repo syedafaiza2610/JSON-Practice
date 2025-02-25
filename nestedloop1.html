@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv"></div>
+
+
+
+    <script>
+        var obj, i, x = " ";
+        obj = {
+            "name": "John Doe",
+            "course": [
+                { "catname": "Website Development", "cname": ["PHP", "ASP.NET", "NODE JS"] },
+                { "catname": "Mobile App Development", "cname": ["ANDROID", "FLUTTER", "DART"] },
+                { "catname": "Digital Marketing", "cname": ["SEO", "SMM", "Email Marketing"] },
+
+            ]
+
+        }
+      for(i in obj.course){
+        x+= "<h2>" + obj.course[i].catname + "</h2>";
+        for(j in obj.course[i].cname){
+            x+= "<h6>" + obj.course[i].cname[j] + "</h6>"
+        }
+      }
+      document.getElementById('mydiv').innerHTML = x
+
+
+
+    // for(i in obj.course){
+    //     x+= "<h2>" + obj.course[i].catname + "</h2>";
+    //     for(j in obj.course[i].cname){
+    //         x+= "<h6>" + obj.course[i].cname[j] + "</h6>";
+    //     }
+    // }
+    // document.getElementById('mydiv').innerHTML = x
+
+
+    </script>
+</body>
+
+</html>
